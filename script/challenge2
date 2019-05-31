@@ -1,0 +1,1 @@
+module.exports=(h=>(m=Math.sqrt(h.length),t=0,l=h.split(" "),s=[],r=[],w=0,l.forEach(h=>{t+=h.length+1,r.push(h),t>m&&(m=t,w=t>w?t:w,s.push(r),t=0,r=[])}),0!=r.length&&s.push(r),b="*".repeat(w+2)+"\n",c="*"+b,c+="*",s.forEach(t=>{d="",t.forEach(t=>{d+=" "+t}),c+=d+" ".repeat(w-d.length),c+=" *\n*"}),c+b));

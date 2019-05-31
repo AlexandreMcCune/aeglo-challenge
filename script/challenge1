@@ -1,0 +1,1 @@
+module.exports=(a,b)=>{d=0;r='';f=b.replace(/\s/g,'').split('');i=0;a.split('').forEach((c)=>{e=f[i]&&c.toLowerCase()==f[i].toLowerCase();if(d==1&&!e){r+=']';d=0}else if(e){i++;if(d==0){r+='[';d=1}}r+=c});return d==1?r+']':r}
